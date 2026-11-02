@@ -1,0 +1,22 @@
+{
+  "name": "hollow-crown",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hollow Crown - a dark fantasy action roguelike for the browser.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @hollow-crown/client",
+    "build": "npm run build -w @hollow-crown/client",
+    "preview": "npm run preview -w @hollow-crown/client",
+    "test": "npm run test -w @hollow-crown/core",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
